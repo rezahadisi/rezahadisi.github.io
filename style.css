@@ -1,0 +1,35 @@
+:root{--text:#212121;--muted:#5f6368;--bg:#fff;--accent:#1a73e8;--nav-h:64px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.site-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e0e0e0;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;padding:0 32px}
+.site-title{font-size:20px;font-weight:500;color:var(--text)}
+.site-title:hover{text-decoration:none}
+.site-nav{display:flex;gap:28px}
+.site-nav a{color:var(--text);font-size:15px;padding:6px 0;border-bottom:2px solid transparent}
+.site-nav a:hover{text-decoration:none;border-bottom-color:var(--muted)}
+.site-nav a.active{border-bottom-color:var(--text);font-weight:500}
+.menu-btn{display:none;background:none;border:0;font-size:26px;cursor:pointer}
+.banner{position:relative;height:340px;background-size:cover;background-position:center;background-color:#555;display:flex;align-items:center;justify-content:center}
+.banner::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.35)}
+.banner h1{position:relative;z-index:1;margin:0;color:#fff;font-size:56px;font-weight:400;letter-spacing:.5px;text-align:center;padding:0 16px}
+main{max-width:960px;margin:0 auto;padding:48px 24px 72px}
+h2{font-size:30px;font-weight:400;margin:48px 0 16px}
+h3{font-size:22px;font-weight:500;margin:32px 0 8px}
+main>h2:first-child{margin-top:0}
+ul{padding-left:24px}
+li{margin:10px 0}
+li ul{margin-top:6px}
+.cv-link{display:inline-block;margin:0 0 4px;font-size:18px}
+.contact{margin:0 0 24px}
+.site-footer{border-top:1px solid #e0e0e0;padding:24px;text-align:center;color:var(--muted);font-size:14px}
+@media(max-width:700px){
+ .site-header{padding:0 16px}
+ .menu-btn{display:block}
+ .site-nav{display:none;position:absolute;top:var(--nav-h);left:0;right:0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid #e0e0e0}
+ .site-nav.open{display:flex}
+ .site-nav a{padding:14px 20px;border-bottom:0}
+ .banner{height:220px}.banner h1{font-size:36px}
+}
