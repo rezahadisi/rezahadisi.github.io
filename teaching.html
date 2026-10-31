@@ -3,49 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Reza Hadisi - Teaching</title>
+<title>Teaching – Reza Hadisi</title>
 <meta name="description" content="I regularly teach courses in Arabic and Persian philosophy, ethics, epistemology, logic, ancient Greek philosophy, early modern philosophy, Kant, existentialism, and German Idealism.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap">
-<link rel="stylesheet" href="/style.css">
+<link rel="canonical" href="https://rezahadisi.github.io/teaching.html">
 <link rel="icon" type="image/png" href="favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;700&display=swap">
+<link rel="stylesheet" href="style.css">
+
+<!-- Apply saved or system theme before first paint -->
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5LY739W74"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-D5LY739W74');
 </script>
-
 </head>
 <body>
 
-<!-- Top Navigation & Title Bar -->
 <header class="site-header">
-  <div class="site-title-container">
-    <a class="site-title" href="index.html">Reza Hadisi</a>
+  <div class="bar">
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Toggle menu" aria-controls="nav" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </button>
+
+    <nav class="site-nav" id="nav" aria-label="Main">
+      <a href="index.html">about</a>
+      <a href="research.html">research</a>
+      <a href="teaching.html" aria-current="page">teaching</a>
+      <a href="cv.pdf" target="_blank" rel="noopener">cv</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM11 1h2v3h-2zm0 19h2v3h-2zM1 11h3v2H1zm19 0h3v2h-3zM4.2 5.6l1.4-1.4 2.1 2.1-1.4 1.4zm12.1 12.1 1.4-1.4 2.1 2.1-1.4 1.4zM5.6 19.8l-1.4-1.4 2.1-2.1 1.4 1.4zM18.4 4.2l1.4 1.4-2.1 2.1-1.4-1.4z"/></svg>
+      </button>
+    </nav>
   </div>
-  <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
-  <nav class="site-nav" id="nav">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html" class="active">Teaching</a>
-    <a href="cv.pdf" target="_blank" rel="noopener">[C.V.]</a>
-  </nav>
 </header>
 
 <main>
-  <!--  <img src="teaching.jpg" alt="swimming" class="section-image">-->
+  <h1 class="page-title"><b>Teaching</b></h1>
 
-  <p>I regularly teach courses in Arabic and Persian philosophy, ethics, epistemology, logic, ancient Greek philosophy (esp. ethics), early modern philosophy, Kant, existentialism, and German Idealism.</p>
-  <p>Feel free to <a href="mailto:r.hadisi@utoronto.ca">email me</a> for my syllabi.</p>
-  
-  <h2 id="recent-courses">Recent Courses</h2>
-  <ul>
+  <p class="page-intro">I regularly teach courses in Arabic and Persian philosophy, ethics, epistemology, logic, ancient Greek philosophy (esp. ethics), early modern philosophy, Kant, existentialism, and German Idealism.</p>
+  <p class="page-intro">Feel free to <a href="mailto:r.hadisi@utoronto.ca">email me</a> for my syllabi.</p>
+
+  <h2 id="recent-courses">Recent courses</h2>
+  <ul class="courses">
     <li>Graduate Seminar: Medieval Arabic Ethics | S26</li>
     <li>Senior Seminar: Moral Particularism | S26</li>
-    <li>Senior Seminar: Kant's Third Critique | F25</li>
+    <li>Senior Seminar: Kant’s Third Critique | F25</li>
     <li>Introduction to Post-Classical Arabic Philosophy | F-24, F25</li>
     <li>Seminar on the History of Philosophy: Friendship and Love | F-24</li>
     <li>Seminar on Post-Classical Arabic Philosophy | S-24</li>
@@ -55,11 +74,11 @@
     <li>Reason and Irrationality | S-23, S2-25</li>
     <li>Seminar on action theory and ethics | F-22</li>
     <li>Seminar on Anscombe and Moral Theory (history of moral) | Sp 21</li>
-    <li>Philosophy of Religion, F-21, S-25</li>
+    <li>Philosophy of Religion | F-21, S-25</li>
     <li>Justice &amp; Virtue | F-20, S-21, F21, Sp22</li>
     <li>History of Modern European Philosophy | S-19</li>
     <li>Introduction to Existentialism | S-19, Sp22</li>
-    <li>Kant's First Critique (Senior Seminar) | F-18</li>
+    <li>Kant’s First Critique (Senior Seminar) | F-18</li>
     <li>Intro to Sufi Philosophy | F-18</li>
     <li>Ethics of Belief | F-18</li>
     <li>Critical Thinking | S-17</li>
@@ -72,8 +91,25 @@
 </main>
 
 <footer class="site-footer">
-  Reza Hadisi &copy;2026
+  © 2026 Reza Hadisi. Based on the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 </footer>
 
+<script>
+(function () {
+  var btn = document.getElementById('menu-btn');
+  var nav = document.getElementById('nav');
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  document.getElementById('theme-toggle').addEventListener('click', function () {
+    var root = document.documentElement;
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+})();
+</script>
 </body>
 </html>
