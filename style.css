@@ -40,14 +40,15 @@ body {
 }
  
 a {
-  color: var(--accent);
-  font-weight: 500;
-  text-decoration: none;
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: #e07a5f;
 }
 a:hover {
-  color: var(--accent-hover);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  color: var(--text);
+  text-decoration-color: #b9533a;
 }
  
 /* ---------- Top bar ---------- */
