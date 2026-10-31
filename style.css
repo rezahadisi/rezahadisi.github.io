@@ -260,7 +260,7 @@ main li ul li { margin-bottom: 0.3rem; }
  
 /* ---------- Expandable abstracts ---------- */
  
-details.abstract { margin: 0.35rem 0 0; }
+details.abstract { display: inline; margin-left: 0.5em; }
  
 details.abstract summary {
   display: inline-block;
