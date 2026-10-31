@@ -4,8 +4,8 @@
   --text: #000000;
   --text-light: #6b6f76;
   --divider: rgba(0, 0, 0, 0.1);
-   --accent: #2a5fa5;
-  --accent-hover: #1b4278;
+  --accent: #3571cf;
+  --accent-hover: #2557a8;
   --shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
  
@@ -41,14 +41,13 @@ body {
  
 a {
   color: var(--accent);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  font-weight: 500;
+  text-decoration: none;
 }
 a:hover {
   color: var(--accent-hover);
-  text-decoration-color: currentColor;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
  
 /* ---------- Top bar ---------- */
