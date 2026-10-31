@@ -4,8 +4,8 @@
   --text: #000000;
   --text-light: #6b6f76;
   --divider: rgba(0, 0, 0, 0.1);
-   --accent: #1b4332;
-  --accent-hover: #40916c;
+    --accent: #087a99;
+  --accent-hover: #05566d;
   --shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
  
@@ -14,8 +14,8 @@
   --text: #f0f0f0;
   --text-light: #a3a7ad;
   --divider: rgba(255, 255, 255, 0.14);
-    --accent: #74c69d;
-  --accent-hover: #a7dcc0;
+    --accent: #4fc3df;
+  --accent-hover: #8adcee;
   --shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
  
@@ -39,17 +39,7 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
  
-main a {
-  color: var(--accent);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-main a:hover {
-  color: var(--accent-hover);
-  text-decoration: underline;
-}
-.social a { text-decoration: none; }
+
  
 /* ---------- Top bar ---------- */
  
@@ -286,4 +276,26 @@ details.abstract p {
   font-weight: 300;
   line-height: 1.6;
   color: var(--text);
+}
+
+a,
+main a,
+.site-nav a,
+.social a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+main a:hover,
+.site-nav a:hover,
+.social a:hover,
+details.abstract summary:hover {
+  color: var(--accent-hover);
+  text-decoration: none;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 500;
 }
